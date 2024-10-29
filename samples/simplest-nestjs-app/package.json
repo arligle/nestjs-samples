@@ -1,0 +1,26 @@
+{
+  "name": "simplest-nestjs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:single-file-app": "ts-node src/nest/single-file-nest-app.ts",
+    "start:main": "ts-node src/nest/main.ts",
+    "start:node-http-server": "ts-node src/node/http-server.ts",
+    "start:express": "ts-node src/express/http-server.ts "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "workspace:*",
+    "@nestjs/core": "workspace:*",
+    "@nestjs/platform-express": "workspace:*",
+    "express": "workspace:*",
+    "reflect-metadata": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.2"
+  }
+}

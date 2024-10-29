@@ -1,3 +1,5 @@
 packages:
   - 'samples/*'
+  - 'packages/*'
+  - 'nestjs/*'
   - '!**/test/**'

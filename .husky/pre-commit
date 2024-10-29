@@ -11,10 +11,10 @@ echo "当前分支: $branch"
 # exit 0
 # fi
 # 限制直接提交到主分支
-if [ "$branch" = "main" ]; then
-echo "您不能直接提交到主分支"
-exit 1
-fi
+# if [ "$branch" = "main" ]; then
+# echo "您不能直接提交到主分支"
+# exit 1
+# fi
 
 # 检查提交消息是否由 Commitizen 生成
 commit_msg_file=$(git rev-parse --git-dir)/COMMIT_EDITMSG
