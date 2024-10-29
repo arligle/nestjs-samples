@@ -1,0 +1,35 @@
+{
+  "name": "my-nest-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+    "prebuild": "rimraf dist",
+    "test:all": "nx affected:test --all --codeCoverage --skip-nx-cache",
+    "prepare": "husky install",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "lint:ws-fix": "pnpm dlx sherif@latest --fix",
+    "clean": "git clean -xdf node_modules",
+    "clean-all": "pnpm run clean && pnpm recursive exec rm -rf node_modules"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/config-nx-scopes": "^19.5.0",
+    "commitizen": "^4.3.1",
+    "cz-customizable": "^7.2.1",
+    "husky": "^8.0.0",
+    "ts-node": "10.9.1",
+    "tslib": "^2.3.0",
+    "typescript": "~5.5.2",
+    "typescript-eslint": "^8.0.0"
+  }
+}
