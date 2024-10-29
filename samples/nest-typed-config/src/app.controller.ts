@@ -10,3 +10,13 @@ export class AppController {
     return this.appService.getHello();
   }
 }
+
+@Controller('/config')
+export class ConfigController {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  showConfig() {
+    return this.appService.show();
+  }
+}
