@@ -66,6 +66,7 @@ export class NestFactoryStatic {
     httpAdapter: AbstractHttpAdapter,
     options?: NestApplicationOptions,
   ): Promise<T>;
+
   public async create<T extends INestApplication = INestApplication>(
     moduleCls: any,
     serverOrOptions?: AbstractHttpAdapter | NestApplicationOptions,

@@ -1,5 +1,5 @@
-import { NestFactory } from '@nestjs/core';
-import { Module, Controller, Get } from '@nestjs/common';
+import { NestFactory } from '../../../../nest/core';
+import { Module, Controller, Get } from '../../../../nest/common';
 // 创建一个控制器
 @Controller()
 class AppController {

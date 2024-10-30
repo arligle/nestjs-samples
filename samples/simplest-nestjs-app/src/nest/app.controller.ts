@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get } from '../../../../nest/common';
 import { bye } from './a';
 
 @Controller('/app')
