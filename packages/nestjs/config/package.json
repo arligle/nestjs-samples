@@ -25,9 +25,9 @@
   "devDependencies": {
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-angular": "19.5.0",
-    "@nestjs/common": "10.4.6",
-    "@nestjs/core": "10.4.6",
-    "@nestjs/platform-express": "10.4.6",
+    "@nestjs/common": "workspace:*",
+    "@nestjs/core": "workspace:*",
+    "@nestjs/platform-express": "workspace:*",
     "@nestjs/testing": "10.4.6",
     "@types/jest": "29.5.14",
     "@types/lodash": "4.17.13",
@@ -49,10 +49,6 @@
     "ts-jest": "29.2.5",
     "typescript": "5.6.3"
   },
-  "peerDependencies": {
-    "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
-    "rxjs": "^7.1.0"
-  },
   "lint-staged": {
     "*.ts": [
       "prettier --write"
@@ -63,9 +59,5 @@
       "commit-msg": "commitlint -c .commitlintrc.json -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nestjs/config"
   }
 }
